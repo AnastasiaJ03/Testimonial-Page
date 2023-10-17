@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+ul{
+list-style: none;
+}
+
+:root{
+    --main-bg:#FAFAF9;
+    --card-bg:#FFF;
+    --main-color:#D4D4D8;
+    --checkmark-bg:#4CA154;
+}
+
+.container{
+    max-width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    min-height:100vh;
+}
+
+body{
+    font-family: 'Sora', sans-serif;
+    background-color: var(--main-bg);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.flow>* + *{
+    margin-top:20px;
+}
+
+.page{
+    display:flex;
+}
+
+.logo{
+    max-width: 100px;
+    margin-right: 13px;
+}
+
+.card{
+    font-size: 16px;
+    max-width:300px;
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius:10px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+} 
+
+.card>*+*{
+    margin-top: 20px;
+}
+
+
+.left{
+max-width: 50%;
+}
+
+.left p{
+    margin-bottom: 20px;
+}
+
+.right{
+    max-width: 50%;
+}
+
+.card__header{
+    display: flex;
+    align-items:center;
+}
+
+ul li{
+    font-size: 14px;
+    background: url(../img/Done_ring_round_fill.svg) no-repeat left center/20px;
+    padding-left:30px;
+}
+
+.card.select{
+    margin-left: 258px;
+}
+
+
+@media (max-width:920px) {
+    .page{
+        display: block;
+    }
+
+    .left{
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .right{
+        max-width: 100%;
+    }
+}
